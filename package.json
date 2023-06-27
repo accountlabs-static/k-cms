@@ -30,6 +30,7 @@
     "@sillsdev/docu-notion": "^0.13.2",
     "@tsconfig/docusaurus": "^1.0.5",
     "cross-var": "^1.1.0",
+    "docu-notion": "^0.11.0",
     "typescript": "^4.7.4"
   },
   "browserslist": {
@@ -46,5 +47,10 @@
   },
   "engines": {
     "node": ">=16.14"
+  },
+  "pnpm": {
+    "patchedDependencies": {
+      "@sillsdev/docu-notion@0.13.2": "patches/@sillsdev__docu-notion@0.13.2.patch"
+    }
   }
 }

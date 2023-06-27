@@ -1,0 +1,13 @@
+diff --git a/dist/config/default.docunotion.config.js b/dist/config/default.docunotion.config.js
+index 857793f7823fa48716352164b22948395c653ce9..2bb6673141b643b94532bdaafd8b429308193ba8 100644
+--- a/dist/config/default.docunotion.config.js
++++ b/dist/config/default.docunotion.config.js
+@@ -30,7 +30,7 @@ const defaultConfig = {
+         // Regexps plus javascript `import`s that operate on the Markdown output
+         embedTweaks_1.imgurGifEmbed,
+         embedTweaks_1.gifEmbed,
+-        embedTweaks_1.youtubeEmbed,
++        // embedTweaks_1.youtubeEmbed,
+         embedTweaks_1.vimeoEmbed,
+     ],
+ };
