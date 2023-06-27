@@ -4,7 +4,7 @@ export const youtubeEmbed: IPlugin = {
   name: "youtube",
   regexMarkdownModifications: [
     {
-      regex: /\[embed\]\((.*youtube\.com\/watch.*)\)/, //youtube.com/watch
+      regex: /\[embed\]\((.*youtube\.com\/watch.*)\)/,
       imports: [`import ReactPlayer from "react-player";`],
       replacementPattern: `<ReactPlayer controls url="$1" />`,
     },
