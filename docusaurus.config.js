@@ -68,6 +68,7 @@ const config = {
         logo: {
           alt: 'Keystone Logo',
           src: 'img/logo.svg',
+          srcDark: 'img/logo_dark.svg',
         },
         items: [
           {
