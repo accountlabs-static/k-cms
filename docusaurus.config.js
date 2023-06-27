@@ -134,6 +134,7 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
+    onBrokenLinks: 'warn',
 };
 
 module.exports = config;
