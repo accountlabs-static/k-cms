@@ -1,5 +1,5 @@
 ---
-title: 새로운 동맹: Keystone과 OKX 월렛이 협력
+title: 새로운 동맹 - Keystone과 OKX 월렛이 협력
 sidebar_position: 0
 slug: /format
 keywords: [test]
