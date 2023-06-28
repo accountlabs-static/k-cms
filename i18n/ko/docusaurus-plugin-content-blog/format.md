@@ -1,5 +1,5 @@
 ---
-title: A New Alliance- Keystone and OKX Wallet Collaborates
+title: 새로운 동맹: Keystone과 OKX 월렛이 협력
 sidebar_position: 0
 slug: /format
 keywords: [test]
@@ -8,7 +8,7 @@ keywords: [test]
 import ReactPlayer from "react-player";
 import { TwitterTweetEmbed } from "react-twitter-embed";
 
-### A New Alliance: Keystone and OKX Wallet Collaborates {#3463b1ff99a2427ba62481b2119f6386}
+### 새로운 동맹: Keystone과 OKX 월렛이 협력 {#3463b1ff99a2427ba62481b2119f6386}
 
 
 ![](./18617058.jpg)
@@ -17,10 +17,9 @@ import { TwitterTweetEmbed } from "react-twitter-embed";
 The [**Keystone**](https://twitter.com/KeystoneWallet) team is thrilled to announce a new milestone in our journey — An integration with [**OKX wallet**](https://www.okx.com/web3).
 
 
-Keystone, for those who may not be familiar, is a hardware wallet device designed to ensure top-tier security against cyber threats like hacking, by facilitating offline storage of digital assets. With a focus on user-friendliness and solid security measures, Keystone has become a preferred choice for many digital asset investors seeking reliable protection for their investments.
+Keystone은 해킹과 같은 사이버 위협으로부터 디지털 자산을 오프라인 저장을 통해 최고 수준의 보안을 보장하는 하드웨어 월렛 디바이스이다. 사용자 친화성과 견고한 보안 조치에 중점을 둔 Keystone은 신뢰성 있는 투자 보호를 찾는 많은 디지털 자산 투자자들에게 선호되는 선택지가 되어왔다.
 
-
-This strategic partnership fuses the benefits of a software wallet’s convenience and accessibility with a hardware wallet’s robust security, offering Web3 users an optimal blend of features. Furthermore, it reinforces the security framework of the entire Web3 ecosystem by broadening the options for users to securely store their assets on a hardware wallet.
+이 전략적인 파트너십은 소프트웨어 월렛의 편리성과 접근성을 하드웨어 월렛의 견고한 보안과 결합하여 Web3 사용자들에게 최적의 기능 조합을 제공한다. 또한 하드웨어 월렛에서 자산을 안전하게 저장할 수 있는 사용자 옵션을 확장하여 전체 Web3 생태계의 보안 프레임워크를 강화한다.
 
 
 
