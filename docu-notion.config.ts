@@ -4,14 +4,25 @@ export const youtubeEmbed: IPlugin = {
   name: "youtube",
   regexMarkdownModifications: [
     {
-      regex: /\[embed\]\((.*youtube\.com\/watch.*)\)/,
+      regex: /\[image\]\((.*youtube\.com\/watch.*)\)/,
       imports: [`import ReactPlayer from "react-player";`],
       replacementPattern: `<ReactPlayer controls url="$1" />`,
     },
   ],
 };
 
+export const twitterEmbed: IPlugin = {
+  name: "twitter",
+  regexMarkdownModifications: [
+    {
+      regex: /\[(?:embed)\]\(https?:\/\/twitter\.com\/(?:\w+)\/status\/(\d+)\)/,
+      imports: [`import { TwitterTweetEmbed } from "react-twitter-embed";`],
+      replacementPattern: `<TwitterTweetEmbed tweetId="$1" />`,
+    },
+  ],
+}
+
 const config: IDocuNotionConfig = {
-  plugins: [youtubeEmbed],
+  plugins: [youtubeEmbed, twitterEmbed],
 };
 export default config;
