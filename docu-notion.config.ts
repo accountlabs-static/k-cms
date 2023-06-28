@@ -15,7 +15,7 @@ export const twitterEmbed: IPlugin = {
   name: "twitter",
   regexMarkdownModifications: [
     {
-      regex: /\[(?:embed)\]\(https?:\/\/twitter\.com\/(?:\w+)\/status\/(\d+)\)/,
+      regex: /\[embed\]\(https?:\/\/twitter\.com\/(?:\w+)\/status\/(\d+)(?:\?(?:[\w-]+=[\w-]+&)*(?:[\w-]+=[\w-]+))?\)/,
       imports: [`import { TwitterTweetEmbed } from "react-twitter-embed";`],
       replacementPattern: `<TwitterTweetEmbed tweetId="$1" />`,
     },
