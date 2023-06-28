@@ -269,5 +269,13 @@
   "theme.tags.tagsPageTitle": {
     "message": "Tags",
     "description": "The title of the tag list page"
+  },
+  "homepage.title": {
+    "message": "Keystone Support",
+    "description": "The homepage title"
+  },
+  "homepage.description": {
+    "message": "Keystone Support",
+    "description": "The homepage description"
   }
 }
