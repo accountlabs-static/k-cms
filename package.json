@@ -13,7 +13,7 @@
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
     "typecheck": "tsc",
-    "pull": "cross-var docu-notion -n secret_VT2vHoO7cw16VFj8Rg90ilLh6bq07qKzP4kFu7e2USb -r c3efc63b28794706b2db52d6afb18c25"
+    "pull": "cross-var docu-notion -n %DOCU_NOTION_INTEGRATION_TOKEN% -r %DOCU_NOTION_ROOT_PAGE%"
   },
   "dependencies": {
     "@docusaurus/core": "2.4.1",
