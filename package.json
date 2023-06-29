@@ -10,15 +10,10 @@
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
-    "cp": "pnpm run cp:blog && pnpm run cp:docs",
-    "cp:blog": "cp -r blog/** i18n/zh-Hant/docusaurus-plugin-content-blog && cp -r blog/** i18n/ko/docusaurus-plugin-content-blog",
-    "cp:docs": "cp -r docs/** i18n/zh-Hant/docusaurus-plugin-content-docs/current && cp -r docs/** i18n/ko/docusaurus-plugin-content-docs/current",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
     "typecheck": "tsc",
-    "pull": "pnpm run pull:docs && pnpm run pull:blog && pnpm run cp",
-    "pull:docs": "dotenv -- cross-var docu-notion -n \"%DOCU_NOTION_INTEGRATION_TOKEN%\" -r \"%DOCU_NOTION_DOCS_ROOT_PAGE%\"",
-    "pull:blog": "dotenv -- cross-var docu-notion -n \"%DOCU_NOTION_INTEGRATION_TOKEN%\" -r \"%DOCU_NOTION_BLOG_ROOT_PAGE%\" -m blog"
+    "pull": "node pull.js"
   },
   "dependencies": {
     "@docusaurus/core": "2.4.1",
