@@ -31,7 +31,9 @@ pnpm install
 
 3. Set up the environment variables:
 
+```
 Copy the .env.example file to .env and fill in the required values.
+```
 
 4. Pull content from Notion:
 
@@ -46,3 +48,8 @@ pnpm run start
 ```
 
 Open your browser and visit http://localhost:3000.
+
+## Known Limitations
+
+- Only standard Markdown formatting is supported in Notion content.
+- Specific embeds, such as YouTube and Twitter, are supported. Other embeds might not be rendered correctly.
