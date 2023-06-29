@@ -13,6 +13,9 @@ dependencies:
   '@docusaurus/core':
     specifier: 2.4.1
     version: 2.4.1(@docusaurus/types@2.4.1)(react-dom@17.0.2)(react@17.0.2)(typescript@4.7.4)
+  '@docusaurus/plugin-client-redirects':
+    specifier: ^2.4.1
+    version: 2.4.1(react-dom@17.0.2)(react@17.0.2)(typescript@4.7.4)
   '@docusaurus/preset-classic':
     specifier: 2.4.1
     version: 2.4.1(@algolia/client-search@4.18.0)(react-dom@17.0.2)(react@17.0.2)(search-insights@2.6.0)(typescript@4.7.4)
@@ -1843,6 +1846,43 @@ packages:
       - esbuild
       - uglify-js
       - webpack-cli
+
+  /@docusaurus/plugin-client-redirects@2.4.1(react-dom@17.0.2)(react@17.0.2)(typescript@4.7.4):
+    resolution: {integrity: sha512-tp0j16gaLIJ4p+IR0P6KDOFsTOGGMY54MNPnmM61Vaqqt5omLqsuKUO8UlCGU1oW/4EIQOhXYy99XYY5MjE+7A==}
+    engines: {node: '>=16.14'}
+    peerDependencies:
+      react: ^16.8.4 || ^17.0.0
+      react-dom: ^16.8.4 || ^17.0.0
+    dependencies:
+      '@docusaurus/core': 2.4.1(@docusaurus/types@2.4.1)(react-dom@17.0.2)(react@17.0.2)(typescript@4.7.4)
+      '@docusaurus/logger': 2.4.1
+      '@docusaurus/utils': 2.4.1(@docusaurus/types@2.4.1)
+      '@docusaurus/utils-common': 2.4.1(@docusaurus/types@2.4.1)
+      '@docusaurus/utils-validation': 2.4.1(@docusaurus/types@2.4.1)
+      eta: 2.2.0
+      fs-extra: 10.1.0
+      lodash: 4.17.21
+      react: 17.0.2
+      react-dom: 17.0.2(react@17.0.2)
+      tslib: 2.6.0
+    transitivePeerDependencies:
+      - '@docusaurus/types'
+      - '@parcel/css'
+      - '@swc/core'
+      - '@swc/css'
+      - bufferutil
+      - csso
+      - debug
+      - esbuild
+      - eslint
+      - lightningcss
+      - supports-color
+      - typescript
+      - uglify-js
+      - utf-8-validate
+      - vue-template-compiler
+      - webpack-cli
+    dev: false
 
   /@docusaurus/plugin-content-blog@2.4.1(react-dom@17.0.2)(react@17.0.2)(typescript@4.7.4):
     resolution: {integrity: sha512-E2i7Knz5YIbE1XELI6RlTnZnGgS52cUO4BlCiCUCvQHbR+s1xeIWz4C6BtaVnlug0Ccz7nFSksfwDpVlkujg5Q==}

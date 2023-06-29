@@ -31,7 +31,20 @@ const config = {
     defaultLocale: 'en',
     locales: ['en', 'zh-Hant', 'ko'],
   },
-
+  plugins: [
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        fromExtensions: ['html', 'htm'],
+        createRedirects(routePath) {
+          if (routePath === '/docs' || routePath === '/docs/') {
+            return [`${routePath}/introduction`];
+          }
+          return [];
+        },
+      },
+    ],
+  ],
   presets: [
     [
       'classic',
