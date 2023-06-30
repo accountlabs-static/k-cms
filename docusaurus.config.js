@@ -36,13 +36,11 @@ const config = {
       '@docusaurus/plugin-client-redirects',
       {
         fromExtensions: ['html', 'htm'],
-        redirects: [{
-          to: '/docs/introduction',
-          from: ['/'],
-        }],
         createRedirects(routePath) {
           if (routePath === '/docs' || routePath === '/docs/') {
             return [`${routePath}/introduction`];
+          } else if (routePath === '/') {
+            return [`${routePath}/docs/introduction`];
           }
           return [];
         },
@@ -93,6 +91,7 @@ const config = {
           src: 'img/logo.svg',
           srcDark: 'img/logo_dark.svg',
         },
+        hideOnScroll: false,
         items: [
           {
             type: 'docSidebar',
