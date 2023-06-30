@@ -44,8 +44,14 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Apply changes from docu-notion
+      - name: Create cms directory and copy folders
+        run: |
+          mkdir cms
+          cp -r blog cms/
+          cp -r docs cms/
+          cp -r i18n cms/
       - name: Backup to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: /
+          publish_dir: ./cms
