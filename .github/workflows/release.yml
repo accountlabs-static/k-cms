@@ -9,6 +9,9 @@ on:
         description: "Log level"
         required: false
         default: "warning"
+
+permissions: write-all
+
 jobs:
   release:
     name: Release
