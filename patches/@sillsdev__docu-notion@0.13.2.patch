@@ -27,7 +27,7 @@ index 857793f7823fa48716352164b22948395c653ce9..2bb6673141b643b94532bdaafd8b4293
      ],
  };
 diff --git a/dist/plugins/internalLinks.js b/dist/plugins/internalLinks.js
-index e2575948b06b9307693161e4945064a55ac3b560..d2a669ec8db486389bf8e0218a0ce1b67dca700a 100644
+index e2575948b06b9307693161e4945064a55ac3b560..ca3ee201124b5b8846e4d4952798c657a1315c61 100644
 --- a/dist/plugins/internalLinks.js
 +++ b/dist/plugins/internalLinks.js
 @@ -65,7 +65,9 @@ function convertLinkLabel(targetPage, text) {
@@ -36,7 +36,7 @@ index e2575948b06b9307693161e4945064a55ac3b560..d2a669ec8db486389bf8e0218a0ce1b6
  function convertLinkHref(context, targetPage, url) {
 -    let convertedLink = context.layoutStrategy.getLinkPathForPage(targetPage);
 +    // let convertedLink = context.layoutStrategy.getLinkPathForPage(targetPage);
-+    let convertedUrl = targetPage.slug;
++    let convertedLink = targetPage.slug;
 +
      /*****************************
      NOTE: as of this writing, the official Notion API completely drops links
