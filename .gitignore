@@ -20,5 +20,17 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# docs
-# blog
+docs
+blog
+
+i18n/ko/docusaurus-plugin-content-docs/current/*
+!i18n/ko/docusaurus-plugin-content-docs/current/.gitkeep
+
+i18n/ko/docusaurus-plugin-content-blog/*
+!i18n/ko/docusaurus-plugin-content-blog/options.json
+
+i18n/zh-Hant/docusaurus-plugin-content-docs/current/*
+!i18n/zh-Hant/docusaurus-plugin-content-docs/current/.gitkeep
+
+i18n/zh-Hant/docusaurus-plugin-content-blog/*
+!i18n/zh-Hant/docusaurus-plugin-content-blog/options.json
