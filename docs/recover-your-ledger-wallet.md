@@ -1,6 +1,6 @@
 ---
 title: Recover your Ledger Wallet
-sidebar_position: 2
+sidebar_position: 3
 slug: /recover-your-ledger-wallet
 ---
 
