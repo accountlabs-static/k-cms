@@ -1,6 +1,6 @@
 ---
 title: About Keystone
-sidebar_position: 3
+sidebar_position: 0
 slug: /about-about-keystone
 ---
 
