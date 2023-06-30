@@ -11,3 +11,18 @@ index 857793f7823fa48716352164b22948395c653ce9..2bb6673141b643b94532bdaafd8b4293
          embedTweaks_1.vimeoEmbed,
      ],
  };
+diff --git a/dist/plugins/internalLinks.js b/dist/plugins/internalLinks.js
+index e2575948b06b9307693161e4945064a55ac3b560..4b54d91f0ac34a82b98e2d28bfc413ff9ce78e45 100644
+--- a/dist/plugins/internalLinks.js
++++ b/dist/plugins/internalLinks.js
+@@ -65,7 +65,9 @@ function convertLinkLabel(targetPage, text) {
+         return targetPage.nameOrTitle;
+ }
+ function convertLinkHref(context, targetPage, url) {
+-    let convertedLink = context.layoutStrategy.getLinkPathForPage(targetPage);
++    // let convertedLink = context.layoutStrategy.getLinkPathForPage(targetPage);
++    let convertedUrl = page.slug;
++
+     /*****************************
+     NOTE: as of this writing, the official Notion API completely drops links
+     to headings, unless they are part of a inline link.
