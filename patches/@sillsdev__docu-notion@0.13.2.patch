@@ -1,3 +1,18 @@
+diff --git a/dist/HierarchicalNamedLayoutStrategy.js b/dist/HierarchicalNamedLayoutStrategy.js
+index c8979cd4e1acecc23d9fbe5f6f2f1de152f7b565..24ff7cb8b725c3cd015e6af53525a683547fb826 100644
+--- a/dist/HierarchicalNamedLayoutStrategy.js
++++ b/dist/HierarchicalNamedLayoutStrategy.js
+@@ -39,6 +39,10 @@ class HierarchicalNamedLayoutStrategy extends LayoutStrategy_1.LayoutStrategy {
+         //console.log("Creating level " + path);
+         const newPath = dirRoot + "/" + path;
+         fs.mkdirSync(newPath, { recursive: true });
++        const indexFileContent = "import DocCardList from '@theme/DocCardList';\n\n<DocCardList />";
++        const indexFilePath = (newPath + "/index.md").replaceAll("//", "/");
++        fs.writeFileSync(indexFilePath, indexFileContent, {});
++
+         this.addCategoryMetadata(newPath, order, levelLabel);
+         return path;
+     }
 diff --git a/dist/config/default.docunotion.config.js b/dist/config/default.docunotion.config.js
 index 857793f7823fa48716352164b22948395c653ce9..2bb6673141b643b94532bdaafd8b429308193ba8 100644
 --- a/dist/config/default.docunotion.config.js
@@ -11,3 +26,18 @@ index 857793f7823fa48716352164b22948395c653ce9..2bb6673141b643b94532bdaafd8b4293
          embedTweaks_1.vimeoEmbed,
      ],
  };
+diff --git a/dist/plugins/internalLinks.js b/dist/plugins/internalLinks.js
+index e2575948b06b9307693161e4945064a55ac3b560..d2a669ec8db486389bf8e0218a0ce1b67dca700a 100644
+--- a/dist/plugins/internalLinks.js
++++ b/dist/plugins/internalLinks.js
+@@ -65,7 +65,9 @@ function convertLinkLabel(targetPage, text) {
+         return targetPage.nameOrTitle;
+ }
+ function convertLinkHref(context, targetPage, url) {
+-    let convertedLink = context.layoutStrategy.getLinkPathForPage(targetPage);
++    // let convertedLink = context.layoutStrategy.getLinkPathForPage(targetPage);
++    let convertedUrl = targetPage.slug;
++
+     /*****************************
+     NOTE: as of this writing, the official Notion API completely drops links
+     to headings, unless they are part of a inline link.
