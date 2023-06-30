@@ -21,11 +21,12 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: lts/*
+          node-version: 18.*
       - name: Install pnpm
-        run: npm install -g pnpm
+        run: |
+          curl -f https://get.pnpm.io/v6.14.js | node - add --global pnpm
       - name: Install dependencies
-        run: pnpm
+        run: pnpm install
       - name: Pull from Notion
         env:
           DOCU_NOTION_INTEGRATION_TOKEN: ${{ secrets.DOCU_NOTION_INTEGRATION_TOKEN }}
