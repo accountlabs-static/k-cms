@@ -39,8 +39,6 @@ const config = {
         createRedirects(routePath) {
           if (routePath === '/docs' || routePath === '/docs/') {
             return [`${routePath}/introduction`];
-          } else if (routePath === '/') {
-            return [`${routePath}/docs/introduction`];
           }
           return [];
         },
@@ -119,7 +117,7 @@ const config = {
             items: [
               {
                 label: 'Tutorial',
-                to: '/docs/intro',
+                to: '/docs',
               },
             ],
           },
