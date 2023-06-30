@@ -37,7 +37,7 @@ const config = {
       {
         fromExtensions: ['html', 'htm'],
         createRedirects(routePath) {
-          if (routePath === '/docs' || routePath === '/docs/') {
+          if (routePath === '/docs' || routePath === '/docs/' || routePath === '/') {
             return [`${routePath}/introduction`];
           }
           return [];
