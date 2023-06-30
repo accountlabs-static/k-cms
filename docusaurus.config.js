@@ -36,8 +36,12 @@ const config = {
       '@docusaurus/plugin-client-redirects',
       {
         fromExtensions: ['html', 'htm'],
+        redirects: [{
+          to: '/docs',
+          from: ['/'],
+        }],
         createRedirects(routePath) {
-          if (routePath === '/docs' || routePath === '/docs/' || routePath === '/') {
+          if (routePath === '/docs' || routePath === '/docs/') {
             return [`${routePath}/introduction`];
           }
           return [];
@@ -96,7 +100,7 @@ const config = {
             position: 'left',
             label: 'Tutorial',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          { to: '/blog', label: 'Blog', position: 'left' },
           {
             type: 'localeDropdown',
             position: 'right',
@@ -158,7 +162,7 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
-    onBrokenLinks: 'warn',
+  onBrokenLinks: 'warn',
 };
 
 module.exports = config;
