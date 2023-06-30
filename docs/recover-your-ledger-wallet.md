@@ -1,6 +1,6 @@
 ---
 title: Recover your Ledger Wallet
-sidebar_position: 1
+sidebar_position: 2
 slug: /recover-your-ledger-wallet
 ---
 
@@ -29,10 +29,10 @@ If you prefer a video guide for the normal setup steps, you can watch the follow
 - [**Keystone Hardware Wallet Review**](https://www.youtube.com/watch?v=FLQ8-pHjzcQ): Covers unboxing, firmware upgrade, self-destruction, BTC-only configuration, blind signing, ENS, NFT display, supported coins, etc.
 - [**Keystone Pro Crypto Hardware Wallet Review**](https://www.youtube.com/watch?v=_QfmWQAFxZA): Discuss MetaMask compatibility, differences between software and hardware wallets, battery options, and Keystone Companion App syncing.
 
-## 👏 **Should you encounter any issues, please refer to the details provided below &gt;&gt;** {#9dae861b06614aa2a5305271fd3023a6}
+## 👏 **Should you encounter any issues, please refer to the details provided below &gt;&gt;** {#832d110f49b84f0b97b15379f2802fc6}
 
 
-## Understanding Keystone: Basic Information {#4d8822a2da124689b33944a739a7396f}
+## Understanding Keystone: Basic Information {#ec017d05c8fb448c9aa0f41f6a77ccfa}
 
 
 Welcome to Keystone! This section will provide you with important information about Keystone and get you ready to start using it.
@@ -78,7 +78,7 @@ We are also excited to announce that upcoming support for ADA is in the works. S
   </details>
 
 
-## Before You Start {#48e9794f0ce9436d8689e2a7dfc85c68}
+## Before You Start {#eef21f3c031b41a6ae666f808047640e}
 
 
 <details>
@@ -201,7 +201,7 @@ Check out the [”Supported Assets and Wallets”](https://keyst.one/supported-w
   </details>
 
 
-## Get Started: Wallet Recovery on Keystone {#bd3c03385ff44bd38492692977bfac81}
+## Get Started: Wallet Recovery on Keystone {#a02920806b8743b5a3fb6859ca392927}
 
 
 Before we proceed, let's ensure that you are in a secure environment free from potential threats. Confirm that you are in a secure place before continuing.
@@ -331,7 +331,7 @@ If you need to access your Passphrase Wallet, please refer to our tutorial on
 Passphrase for detailed instructions.
 
 
-### You're All Set! {#740ae742dadd46619f6e91ef3df7b47f}
+### You're All Set! {#a7554eb90a70439f8236b0a7bc920495}
 
 
 Congratulations on successfully setting up your Keystone wallet and connecting it with your software wallet! You are now ready to securely manage your digital assets.

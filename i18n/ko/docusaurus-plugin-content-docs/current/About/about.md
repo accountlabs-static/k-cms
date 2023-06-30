@@ -1,12 +1,12 @@
 ---
 title: About Keystone
 sidebar_position: 0
-slug: /383066a5-e145-42a2-914f-656771624755
+slug: /about
 ---
 
 
 
-Keystone Hardware Wallet is a 100% Air-gapped QR code communication hardware wallet for Bitcoin, Ethereum, USDT, BCH, XRP, Tron, LTC, Dash, Polkadot, Kusama and 1000+ cryptocurrencies.
+🇰🇷 Keystone Hardware Wallet is a 100% Air-gapped QR code communication hardware wallet for Bitcoin, Ethereum, USDT, BCH, XRP, Tron, LTC, Dash, Polkadot, Kusama and 1000+ cryptocurrencies.
 
 
 It offers convenient cold storage solution with an open source firmware, 4 inch touchscreen and PSBT Bitcoin multisig support. Protect your cryptocurrency with the perfect balance between secure and convenient hardware wallet with mobile phone support.

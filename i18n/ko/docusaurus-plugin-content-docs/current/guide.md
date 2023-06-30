@@ -6,7 +6,7 @@ slug: /guide
 
 
 
-# **General Navigation Guide** {#558dc813637249f39dc99b849c3cae20}
+# **General Navigation Guide** {#d373471a11874a858fb7a21b506af60a}
 
 
 This page will help you navigate the various features based on your user profile (Beginners, Bitcoiners, Web3 Users, Advanced users).
@@ -15,7 +15,7 @@ This page will help you navigate the various features based on your user profile
 Please kindly note that this is not a 101 guide on crypto. We assume you already understand basic concepts like seed phrases, private keys, addresses and have some experience with software wallets.
 
 
-# **Beginners** {#a9088918162b40d28278d7a8ca935baa}
+# **Beginners** {#ece328d0f6c246a093cc5c122ffa4c00}
 
 
 For beginners, the first and ultimate thing you should remember is to NEVER share your seed phrase to ANYONE. Some of the common tricks by scammers include:
@@ -43,7 +43,7 @@ As a beginner, feel free to follow these tutorials to easily utilize your Keysto
 [**Sending Cryptocurrency**](https://support.keyst.one/getting-started/sending-cryptocurrency)
 
 
-# **Bitcoiners** {#8848afa8b129492d9a0af88e8d9d0bf8}
+# **Bitcoiners** {#fa6f437dc18a4463921d2dd566ebf3fd}
 
 
 If you are a bitcoiner, we highly recommend [upgrading](https://support.keyst.one/getting-started/firmware-upgrading) your Keystone device with the BTC-only firmware since removing all altcoin functinality from the firmware will [improve the security for your bitcoin](https://twitter.com/the_charlatan_/status/1331248010672693251).
@@ -97,7 +97,7 @@ You can also find detailed multi-signature tutorial for Keystone with other comp
 [**Multi Signature**](https://support.keyst.one/advanced-features/multi-signature)
 
 
-# **Web3 Users** {#5da40d85aece4487abdef6422a57fb63}
+# **Web3 Users** {#c5282fb131a04e73889552996721b0cf}
 
 
 If you are a Web3/DeFi/Dapp/NFT/GameFi user, please read this article first about one of the biggest security black holes in Web3.
@@ -133,7 +133,7 @@ After you finish reading about basic [setting up Keystone](https://support.keyst
 [**Zapper**](https://support.keyst.one/3rd-party-wallets/defi-dapp-with-keystone/zapper)
 
 
-# **Advanced users** {#6d100cfbb4f84e79aaaae048c2f90a3a}
+# **Advanced users** {#befc40ee930c4a9e947ea091933d97e8}
 
 
 Please kindly note that the features listed in these part are for advanced users. Make sure you fully understand the terminology and each detail disclosed before using them.
