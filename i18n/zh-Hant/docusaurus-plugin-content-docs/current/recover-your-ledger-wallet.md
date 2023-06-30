@@ -29,10 +29,10 @@ If you prefer a video guide for the normal setup steps, you can watch the follow
 - [**Keystone Hardware Wallet Review**](https://www.youtube.com/watch?v=FLQ8-pHjzcQ): Covers unboxing, firmware upgrade, self-destruction, BTC-only configuration, blind signing, ENS, NFT display, supported coins, etc.
 - [**Keystone Pro Crypto Hardware Wallet Review**](https://www.youtube.com/watch?v=_QfmWQAFxZA): Discuss MetaMask compatibility, differences between software and hardware wallets, battery options, and Keystone Companion App syncing.
 
-## 👏 **Should you encounter any issues, please refer to the details provided below &gt;&gt;** {#9dae861b06614aa2a5305271fd3023a6}
+## 👏 **Should you encounter any issues, please refer to the details provided below &gt;&gt;** {#0fb288712be243eb8e7596f5c72f1bb6}
 
 
-## Understanding Keystone: Basic Information {#4d8822a2da124689b33944a739a7396f}
+## Understanding Keystone: Basic Information {#f7b6fd4119774f13bd91df6a9a844dce}
 
 
 Welcome to Keystone! This section will provide you with important information about Keystone and get you ready to start using it.
@@ -78,7 +78,7 @@ We are also excited to announce that upcoming support for ADA is in the works. S
   </details>
 
 
-## Before You Start {#48e9794f0ce9436d8689e2a7dfc85c68}
+## Before You Start {#088e388b2be44dad990fd6b915be6fce}
 
 
 <details>
@@ -201,7 +201,7 @@ Check out the [”Supported Assets and Wallets”](https://keyst.one/supported-w
   </details>
 
 
-## Get Started: Wallet Recovery on Keystone {#bd3c03385ff44bd38492692977bfac81}
+## Get Started: Wallet Recovery on Keystone {#ac264190ac3e4bbaac0f22fdd5cf3d85}
 
 
 Before we proceed, let's ensure that you are in a secure environment free from potential threats. Confirm that you are in a secure place before continuing.
@@ -331,7 +331,7 @@ If you need to access your Passphrase Wallet, please refer to our tutorial on
 Passphrase for detailed instructions.
 
 
-### You're All Set! {#740ae742dadd46619f6e91ef3df7b47f}
+### You're All Set! {#f91efa30351e48778dd7bbd3d9167b73}
 
 
 Congratulations on successfully setting up your Keystone wallet and connecting it with your software wallet! You are now ready to securely manage your digital assets.
