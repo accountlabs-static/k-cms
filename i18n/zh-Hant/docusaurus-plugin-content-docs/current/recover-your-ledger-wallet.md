@@ -151,23 +151,6 @@ Ensuring a fully charged battery will contribute to a smooth and reliable experi
   <summary>Download the Firmware (Optional)</summary>
 
 
-If you notice any discrepancies between your Ledger and Keystone accounts, it is recommended to update your Keystone firmware to the latest version (M-10.8 or newer). This update will also enable you to change the path to Ledger's format.
-
-
-To download the latest firmware, please follow these steps:
-
-
-1. Prepare an SD card with a capacity of less than 512GB (2 or 4GB is sufficient) and format it as FAT32.
-2. Visit the official [Keystone Firmware](https://keyst.one/firmware) page to access the download.
-3. Extract the downloaded file and copy the "update.zip" file onto the SD card.
-
-
-Updating the firmware ensures optimal functionality and compatibility with your Keystone device.
-
-
-For a detailed tutorial on updating the firmware, please refer to the [Firmware Update guide](notion://www.notion.so/o/-MVoz_IYFQgJOaCIqOIM/s/rQXQQRT6etffwhkFpfZG/~/changes/214/getting-started/firmware-upgrading).
-
-
 
   </details>
 
