@@ -1,4 +1,4 @@
-# Keystone CMS Tutorial and Blog Publishing Website
+# Keystone CMS Tutorial and Blog Website
 
 This project is a CMS tutorial and blog publishing website based on [Keystone](https://keyst.one/), with content managed in [Notion](https://www.notion.so/). The site is built using [Docusaurus](https://docusaurus.io/) and deployed on [Vercel](https://vercel.com/).
 
