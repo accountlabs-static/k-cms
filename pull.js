@@ -31,12 +31,12 @@ function runCommand(command) {
 }
 
 const commands = [
-  'dotenv -- cross-var docu-notion -n "%DOCU_NOTION_INTEGRATION_TOKEN%" -r "%DOCU_NOTION_DOCS_ROOT_PAGE_EN%"',
-  'dotenv -- cross-var docu-notion -n "%DOCU_NOTION_INTEGRATION_TOKEN%" -r "%DOCU_NOTION_BLOG_ROOT_PAGE_EN%" -m blog',
-  'dotenv -- cross-var docu-notion -n "%DOCU_NOTION_INTEGRATION_TOKEN%" -r "%DOCU_NOTION_DOCS_ROOT_PAGE_HANT%" -m i18n/zh-Hant/docusaurus-plugin-content-docs/current',
-  'dotenv -- cross-var docu-notion -n "%DOCU_NOTION_INTEGRATION_TOKEN%" -r "%DOCU_NOTION_BLOG_ROOT_PAGE_HANT%" -m i18n/zh-Hant/docusaurus-plugin-content-blog',
-  'dotenv -- cross-var docu-notion -n "%DOCU_NOTION_INTEGRATION_TOKEN%" -r "%DOCU_NOTION_DOCS_ROOT_PAGE_KO%" -m i18n/ko/docusaurus-plugin-content-docs/current',
-  'dotenv -- cross-var docu-notion -n "%DOCU_NOTION_INTEGRATION_TOKEN%" -r "%DOCU_NOTION_BLOG_ROOT_PAGE_KO%" -m i18n/ko/docusaurus-plugin-content-blog',
+  'dotenv -- cross-var docu-notion -n "%DOCU_NOTION_INTEGRATION_TOKEN%" -r "%DOCU_NOTION_DOCS_ROOT_PAGE_EN%" -t "%AVAILABLE_STATUS%"',
+  'dotenv -- cross-var docu-notion -n "%DOCU_NOTION_INTEGRATION_TOKEN%" -r "%DOCU_NOTION_BLOG_ROOT_PAGE_EN%" -m blog -t "%AVAILABLE_STATUS%"',
+  'dotenv -- cross-var docu-notion -n "%DOCU_NOTION_INTEGRATION_TOKEN%" -r "%DOCU_NOTION_DOCS_ROOT_PAGE_HANT%" -m i18n/zh-Hant/docusaurus-plugin-content-docs/current -t "%AVAILABLE_STATUS%"',
+  'dotenv -- cross-var docu-notion -n "%DOCU_NOTION_INTEGRATION_TOKEN%" -r "%DOCU_NOTION_BLOG_ROOT_PAGE_HANT%" -m i18n/zh-Hant/docusaurus-plugin-content-blog -t "%AVAILABLE_STATUS%"',
+  'dotenv -- cross-var docu-notion -n "%DOCU_NOTION_INTEGRATION_TOKEN%" -r "%DOCU_NOTION_DOCS_ROOT_PAGE_KO%" -m i18n/ko/docusaurus-plugin-content-docs/current -t "%AVAILABLE_STATUS%"',
+  'dotenv -- cross-var docu-notion -n "%DOCU_NOTION_INTEGRATION_TOKEN%" -r "%DOCU_NOTION_BLOG_ROOT_PAGE_KO%" -m i18n/ko/docusaurus-plugin-content-blog -t "%AVAILABLE_STATUS%"',
 ];
 
 (async () => {
