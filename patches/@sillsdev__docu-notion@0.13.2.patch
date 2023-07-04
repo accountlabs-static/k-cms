@@ -41,3 +41,16 @@ index e2575948b06b9307693161e4945064a55ac3b560..ca3ee201124b5b8846e4d4952798c657
      /*****************************
      NOTE: as of this writing, the official Notion API completely drops links
      to headings, unless they are part of a inline link.
+diff --git a/dist/pull.js b/dist/pull.js
+index 185f335e9b065aa302ae7d5d5c168dd6f5abdb8f..dce3480056aeb79fd9b480002e1193edf9593595 100644
+--- a/dist/pull.js
++++ b/dist/pull.js
+@@ -111,6 +111,8 @@ function outputPages(options, config, pages) {
+             context.relativeFilePathToFolderContainingPage = Path.dirname(layoutStrategy.getLinkPathForPage(page));
+             if (page.type === NotionPage_1.PageType.DatabasePage &&
+                 context.options.statusTag != "*" &&
++                // The following code is to display articles in the "Ready For Review" state in the staging environment.
++                ![context.options.statusTag, 'Ready For Review'].includes(page.status)) {
+                 page.status !== context.options.statusTag) {
+                 (0, log_1.verbose)(`Skipping page because status is not '${context.options.statusTag}': ${page.nameOrTitle}`);
+                 ++context.counts.skipped_because_status;
