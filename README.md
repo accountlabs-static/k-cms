@@ -54,3 +54,4 @@ Open your browser and visit http://localhost:3000.
 - Only standard Markdown formatting is supported in Notion content.
 - Specific embeds, such as YouTube and Twitter, are supported. Other embeds might not be rendered correctly.
 - Images should be uploaded directly to Notion from your local device. Pasting image links from external sources may cause errors.
+- Custom slugs for sub-pages (articles within subdirectories) in Notion are not supported.
