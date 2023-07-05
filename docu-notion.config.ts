@@ -1,4 +1,4 @@
-import { IDocuNotionConfig, IPlugin } from "@sillsdev/docu-notion";
+import { IDocuNotionConfig, IPlugin } from "@codeharbor/docu-notion";
 
 export const youtubeEmbed: IPlugin = {
   name: "youtube",
