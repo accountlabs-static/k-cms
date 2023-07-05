@@ -16,6 +16,7 @@
     "pull": "node pull.js"
   },
   "dependencies": {
+    "@codeharbor/docu-notion": "^0.0.2",
     "@docusaurus/core": "2.4.1",
     "@docusaurus/plugin-client-redirects": "^2.4.1",
     "@docusaurus/preset-classic": "2.4.1",
@@ -32,7 +33,6 @@
   "devDependencies": {
     "@docusaurus/module-type-aliases": "2.4.1",
     "@docusaurus/theme-mermaid": "^2.4.1",
-    "@sillsdev/docu-notion": "^0.13.2",
     "@tsconfig/docusaurus": "^1.0.5",
     "cross-var": "^1.1.0",
     "dotenv-cli": "^7.2.1",
@@ -53,10 +53,5 @@
   },
   "engines": {
     "node": ">=16.14"
-  },
-  "pnpm": {
-    "patchedDependencies": {
-      "@sillsdev/docu-notion@0.13.2": "patches/@sillsdev__docu-notion@0.13.2.patch"
-    }
   }
 }
