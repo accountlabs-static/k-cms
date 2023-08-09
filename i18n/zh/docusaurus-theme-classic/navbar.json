@@ -1,0 +1,22 @@
+{
+  "logo.alt": {
+    "message": "Keystone Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Tutorial": {
+    "message": "Tutorial",
+    "description": "Navbar item with label Tutorial"
+  },
+  "item.label.Prior Editions": {
+    "message": "经典版本",
+    "description": "Navbar item with label Prior Editions"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  },
+  "item.label.Gen 2": {
+    "message": "Keystone 二代",
+    "description": "Navbar item with label Gen 2"
+  }
+}

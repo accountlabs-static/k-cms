@@ -6,29 +6,19 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Keystone',
-  tagline: 'Dinosaurs are cool',
+  tagline: 'Keystone are cool',
   favicon: 'img/favicon.svg',
 
   // Set the production url of your site here
   url: 'https://k-cms-lemon.vercel.app/',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'Keystone support', // Usually your repo name.
-
+  organizationName: 'KeystoneHQ',
+  projectName: 'Keystone support',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-
-  // Even if you don't use internalization, you can use this field to set useful
-  // metadata like html lang. For example, if your site is Chinese, you may want
-  // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'zh-Hant', 'ko'],
+    locales: ['en', 'zh'], // ['en', 'zh-Hant', 'ko'],
   },
   plugins: [
     [
@@ -36,9 +26,6 @@ const config = {
       {
         fromExtensions: ['html', 'htm'],
         createRedirects(routePath) {
-          if (routePath === '/docs' || routePath === '/docs/') {
-            return [`${routePath}/introduction`];
-          }
           return [];
         },
       },
@@ -59,15 +46,9 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           remarkPlugins: [math],
           rehypePlugins: [katex],
-          // editUrl:
-          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          // editUrl:
-          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -91,14 +72,13 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
-      // image: 'img/docusaurus-social-card.jpg',
+      image: 'img/social-card.jpg',
       navbar: {
-        title: 'Keystone',
         logo: {
           alt: 'Keystone Logo',
           src: 'img/logo.svg',
           srcDark: 'img/logo_dark.svg',
+          href: 'https://keyst.one/',
         },
         hideOnScroll: false,
         items: [
@@ -108,10 +88,19 @@ const config = {
             position: 'left',
             label: 'Tutorial',
           },
-          { to: '/blog', label: 'Blog', position: 'left' },
+          // { to: '/blog', label: 'Blog', position: 'left' },
           {
             type: 'localeDropdown',
             position: 'right',
+          },
+          {
+            label: 'Prior Editions',
+            position: 'right',
+            type: 'dropdown',
+            items: [{
+              href: 'https://support.keyst.one/',
+              label: 'Gen 2',
+            },]
           },
           {
             href: 'https://github.com/KeystoneHQ',
