@@ -23,7 +23,7 @@ jobs:
       - name: Check out source code
         uses: actions/checkout@v2
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PAT }}
           fetch-depth: 0  # fetch all history so we can push to another branch
 
       - name: Setup Node.js
