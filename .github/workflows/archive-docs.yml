@@ -45,12 +45,16 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git checkout -b temp
-          git add -f docs blog i18n
+          if [ -d docs ]; then git add -f docs; fi
+          if [ -d blog ]; then git add -f blog; fi
+          if [ -d i18n ]; then git add -f i18n; fi
           if [[ $(git diff --stat --staged) != '' ]]; then
             git commit -m "Archive docs, blog, and i18n directories"
             git show --stat
             git checkout archive-docs
-            git checkout temp -- docs blog i18n
+            if [ -d docs ]; then git checkout temp -- docs; fi
+            if [ -d blog ]; then git checkout temp -- blog; fi
+            if [ -d i18n ]; then git checkout temp -- i18n; fi
             git commit -m "Archive docs, blog, and i18n directories"
             git push origin archive-docs
           fi
