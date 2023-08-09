@@ -1,6 +1,3 @@
-这是一个中文版本的 README 文件：
-
-```markdown
 # Keystone CMS 教程和博客网站
 
 本项目是一个基于 [Keystone](https://keyst.one/) 的 CMS 教程和博客发布网站，内容在 [Notion](https://www.notion.so/) 中管理。网站使用 [Docusaurus](https://docusaurus.io/) 构建，并部署在 [Vercel](https://vercel.com/) 上。
