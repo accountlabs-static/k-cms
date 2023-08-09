@@ -1,0 +1,40 @@
+name: Archive Docs
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out source code
+        uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
+      - name: Install pnpm
+        run: curl -f https://get.pnpm.io/v6.js | node - add --global pnpm
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Pull latest docs
+        run: pnpm run pull
+
+      - name: Commit and push to archive-docs branch
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add docs blog i18n
+          if [[ $(git diff --stat --staged) != '' ]]; then
+            git commit -m "Archive docs, blog, and i18n directories"
+            git push origin HEAD:archive-docs
+          fi
