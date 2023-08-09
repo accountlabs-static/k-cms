@@ -6,8 +6,9 @@ This project is a CMS tutorial and blog publishing website based on [Keystone](h
 
 - Content management using Notion
 - Docusaurus-powered static site generation
-- Multilingual support
+- Multilingual support with i18n (see [usage](https://docusaurus.io/docs/cli#docusaurus-write-translations-sitedir))
 - Easy deployment on Vercel
+- Regular backups of documentation on the `archive-docs` branch
 
 ## Prerequisites
 
@@ -18,32 +19,34 @@ This project is a CMS tutorial and blog publishing website based on [Keystone](h
 
 1. Clone the repository:
 
-```
+```bash
 git clone https://github.com/accountlabs-static/k-cms.git
 cd k-cms
 ```
 
 2. Install dependencies:
 
-```
+```bash
 pnpm install
 ```
 
 3. Set up the environment variables:
 
-```
-Copy the .env.example file to .env and fill in the required values.
+```bash
+# Copy the .env.example file to .env and fill in the required values.
+cp .env.example .env
+# Then edit .env with your favourite text editor
 ```
 
 4. Pull content from Notion:
 
-```
+```bash
 pnpm run pull
 ```
 
 5. Start the development server:
 
-```
+```bash
 pnpm run start
 ```
 
@@ -55,3 +58,5 @@ Open your browser and visit http://localhost:3000.
 - Specific embeds, such as YouTube and Twitter, are supported. Other embeds might not be rendered correctly.
 - Images should be uploaded directly to Notion from your local device. Pasting image links from external sources may cause errors.
 - Custom slugs for sub-pages (articles within subdirectories) in Notion are not supported.
+
+[中文版本](README.zh.md)
