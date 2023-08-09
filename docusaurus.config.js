@@ -94,11 +94,12 @@ const config = {
       // Replace with your project's social card
       image: 'img/social-card.jpg',
       navbar: {
-        title: 'Keystone',
+        // title: 'Keystone',
         logo: {
           alt: 'Keystone Logo',
           src: 'img/logo.svg',
           srcDark: 'img/logo_dark.svg',
+          href: 'https://keyst.one/',
         },
         hideOnScroll: false,
         items: [
@@ -108,10 +109,19 @@ const config = {
             position: 'left',
             label: 'Tutorial',
           },
-          { to: '/blog', label: 'Blog', position: 'left' },
+          // { to: '/blog', label: 'Blog', position: 'left' },
           {
             type: 'localeDropdown',
             position: 'right',
+          },
+          {
+            label: 'Prior Editions',
+            position: 'right',
+            type: 'dropdown',
+            items: [{
+              href: 'https://support.keyst.one/',
+              label: 'Gen 2',
+            },]
           },
           {
             href: 'https://github.com/KeystoneHQ',
