@@ -8,7 +8,7 @@
     "description": "Navbar item with label Tutorial"
   },
   "item.label.Prior Editions": {
-    "message": "Prior Editions",
+    "message": "经典版本",
     "description": "Navbar item with label Prior Editions"
   },
   "item.label.GitHub": {
@@ -16,7 +16,7 @@
     "description": "Navbar item with label GitHub"
   },
   "item.label.Gen 2": {
-    "message": "Gen 2",
+    "message": "Keystone 二代",
     "description": "Navbar item with label Gen 2"
   }
 }
