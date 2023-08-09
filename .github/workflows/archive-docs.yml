@@ -24,6 +24,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          ref: archive-docs  # switch to the archive-docs branch
 
       - name: Setup Node.js
         uses: actions/setup-node@v2
@@ -43,7 +44,7 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add docs blog i18n
+          git add -f docs blog i18n
           if [[ $(git diff --stat --staged) != '' ]]; then
             git commit -m "Archive docs, blog, and i18n directories"
             git push origin HEAD:archive-docs
