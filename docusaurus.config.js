@@ -18,7 +18,7 @@ const config = {
   onBrokenMarkdownLinks: 'warn',
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'zh-Hant'], // ['en', 'zh-Hant', 'ko'],
+    locales: ['en', 'zh'], // ['en', 'zh-Hant', 'ko'],
   },
   plugins: [
     [
@@ -26,9 +26,6 @@ const config = {
       {
         fromExtensions: ['html', 'htm'],
         createRedirects(routePath) {
-          if (routePath === '/docs' || routePath === '/docs/') {
-            return [`${routePath}/introduction`];
-          }
           return [];
         },
       },

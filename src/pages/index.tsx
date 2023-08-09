@@ -1,8 +1,3 @@
-import React from 'react';
-import { Redirect } from '@docusaurus/router';
-
-function Home() {
-  return <Redirect to="/docs/introduction" />;
-}
+import Home from '../components/portal';
 
 export default Home;
