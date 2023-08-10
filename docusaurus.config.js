@@ -79,6 +79,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      metadata: [{name: 'Keystones', content: 'blog, Tutorial, get started'}],
       image: 'img/social-card.jpg',
       navbar: {
         logo: {
