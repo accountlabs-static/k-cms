@@ -24,7 +24,7 @@ export const youtubeEmbed: IPlugin = {
     }}
   />
 </div>`,
-},
+    },
   ],
 };
 
@@ -63,7 +63,17 @@ export const twitterEmbed: IPlugin = {
   ],
 }
 
+export const removeSpacesBeforeTags: IPlugin = {
+  name: "remove-spaces-before-tags",
+  regexMarkdownModifications: [
+    {
+      regex: /[ \t]*(\<\/?.*?\>)/g,
+      replacementPattern: "$1",
+    },
+  ],
+};
+
 const config: IDocuNotionConfig = {
-  plugins: [youtubeEmbed, twitterEmbed, replaceTabsWithSpaces],
+  plugins: [youtubeEmbed, twitterEmbed, replaceTabsWithSpaces, removeSpacesBeforeTags],
 };
 export default config;
