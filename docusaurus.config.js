@@ -2,6 +2,7 @@ const math = require('remark-math');
 const katex = require('rehype-katex');
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const { i18n } = require('./config');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -17,8 +18,8 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en', 'zh'], // ['en', 'zh-Hant', 'ko'],
+    defaultLocale: i18n.en,
+    locales: [i18n.en, i18n.zh], // ['en', 'zh-Hant', 'ko'],
   },
   scripts: [
     {
@@ -133,6 +134,9 @@ const config = {
               {
                 label: 'Telegram',
                 href: 'https://t.me/KeystoneWallet',
+                [i18n.zh]: {
+                  href: 'http://t.me/KeystoneWalletCN',
+                }
               },
               {
                 label: 'Youtube',
@@ -140,11 +144,17 @@ const config = {
               },
               {
                 label: 'Discord',
-                href: 'https://discord.com/invite/6vEfPEJKJD',
+                href: 'https://keyst.one/discord',
+                [i18n.zh]: {
+                  href: 'https://keyst.one/DC',
+                }
               },
               {
                 label: 'Twitter',
                 href: 'https://twitter.com/KeystoneWallet',
+                [i18n.zh]: {
+                  href: 'https://twitter.com/KeystoneCN',
+                }
               },
             ],
           },
@@ -153,7 +163,10 @@ const config = {
             items: [
               {
                 label: 'Blog',
-                to: '/blog',
+                href: 'https://blog.keyst.one',
+                [i18n.zh]: {
+                  href: 'https://mirror.xyz/keystonecn.eth',
+                }
               },
               {
                 label: 'GitHub',
