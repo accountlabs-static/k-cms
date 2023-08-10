@@ -81,6 +81,7 @@ const config = {
     ({
       metadata: [{name: 'Keystones', content: 'blog, Tutorial, get started'}],
       image: 'img/social-card.jpg',
+      staticDirectories: ['static'],
       navbar: {
         logo: {
           alt: 'Keystone Logo',
