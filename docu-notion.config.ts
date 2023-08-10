@@ -67,8 +67,8 @@ export const removeSpacesBeforeTags: IPlugin = {
   name: "remove-spaces-before-tags",
   regexMarkdownModifications: [
     {
-      regex: /[ \t]*(\<\/?.*?\>)/g,
-      replacementPattern: "$1",
+      regex: /(^|\n)[ \t]*(\<\/?.*?\>)/g,
+      replacementPattern: "$1$2",
     },
   ],
 };
