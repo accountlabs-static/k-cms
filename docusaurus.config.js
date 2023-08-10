@@ -20,6 +20,12 @@ const config = {
     defaultLocale: 'en',
     locales: ['en', 'zh'], // ['en', 'zh-Hant', 'ko'],
   },
+  scripts: [
+    {
+      src: '/_vercel/insights/script.js',
+      defer: true,
+    }
+  ],
   plugins: [
     [
       '@docusaurus/plugin-client-redirects',
