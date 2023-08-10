@@ -17,15 +17,15 @@
   },
   "link.item.label.Stack Overflow": {
     "message": "Stack Overflow",
-    "description": ""
+    "description": "Stack Overflow"
   },
   "link.item.label.Discord": {
     "message": "Discord",
-    "description": ""
+    "description": "Discord"
   },
   "link.item.label.Twitter": {
     "message": "Twitter",
-    "description": ""
+    "description": "Twitter"
   },
   "link.item.label.Blog": {
     "message": "Blog",
@@ -33,7 +33,7 @@
   },
   "link.item.label.GitHub": {
     "message": "GitHub",
-    "description": ""
+    "description": "GitHub"
   },
   "copyright": {
     "message": "Keystone © All rights reserved 2018 - 2023",
