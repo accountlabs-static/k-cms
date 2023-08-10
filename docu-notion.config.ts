@@ -64,6 +64,6 @@ export const twitterEmbed: IPlugin = {
 }
 
 const config: IDocuNotionConfig = {
-  plugins: [youtubeEmbed, twitterEmbed],
+  plugins: [youtubeEmbed, twitterEmbed, replaceTabsWithSpaces],
 };
 export default config;
