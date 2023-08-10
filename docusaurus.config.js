@@ -97,21 +97,17 @@ const config = {
           },
           // { to: '/blog', label: 'Blog', position: 'left' },
           {
+            href: 'https://support.keyst.one/',
+            label: 'Keystone Gen 2',
+            position: 'right',
+          },
+          {
+            href: 'https://keystonewallet.atlassian.net/servicedesk/customer/portal/1',
+            label: 'Contact Us',
+            position: 'right',
+          },
+          {
             type: 'localeDropdown',
-            position: 'right',
-          },
-          {
-            label: 'Prior Editions',
-            position: 'right',
-            type: 'dropdown',
-            items: [{
-              href: 'https://support.keyst.one/',
-              label: 'Gen 2',
-            },]
-          },
-          {
-            href: 'https://github.com/KeystoneHQ',
-            label: 'GitHub',
             position: 'right',
           },
         ],
