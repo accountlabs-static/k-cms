@@ -28,6 +28,16 @@ export const youtubeEmbed: IPlugin = {
   ],
 };
 
+export const replaceTabsWithSpaces: IPlugin = {
+  name: "replace-tabs",
+  regexMarkdownModifications: [
+    {
+      regex: /\t/g,
+      replacementPattern: "  ",
+    },
+  ],
+};
+
 export const twitterEmbed: IPlugin = {
   name: "twitter",
   regexMarkdownModifications: [
