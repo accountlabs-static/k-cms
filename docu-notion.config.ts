@@ -33,7 +33,7 @@ export const replaceTabsWithSpaces: IPlugin = {
   regexMarkdownModifications: [
     {
       regex: /\t/g,
-      replacementPattern: "  ",
+      replacementPattern: "    ",
     },
   ],
 };
@@ -74,6 +74,6 @@ export const removeSpacesBeforeTags: IPlugin = {
 };
 
 const config: IDocuNotionConfig = {
-  plugins: [youtubeEmbed, twitterEmbed, replaceTabsWithSpaces, removeSpacesBeforeTags],
+  plugins: [youtubeEmbed, twitterEmbed, replaceTabsWithSpaces],
 };
 export default config;
