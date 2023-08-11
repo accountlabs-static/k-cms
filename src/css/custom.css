@@ -35,3 +35,12 @@
   --ifm-color-primary-lightest: #d6ecfa;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+p > img:only-child {
+  display: block;
+  margin: 0 auto;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 80vh;
+}

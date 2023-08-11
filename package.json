@@ -16,7 +16,7 @@
     "pull": "node pull.js"
   },
   "dependencies": {
-    "@codeharbor/docu-notion": "^0.0.2",
+    "@codeharbor/docu-notion": "^0.0.3",
     "@docusaurus/core": "^2.4.1",
     "@docusaurus/plugin-client-redirects": "^2.4.1",
     "@docusaurus/preset-classic": "2.4.1",
