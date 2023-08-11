@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@codeharbor/docu-notion':
-    specifier: ^0.0.3
-    version: 0.0.3(@types/node@20.3.2)(typescript@4.7.4)
+    specifier: ^0.0.4
+    version: 0.0.4(@types/node@20.3.2)(typescript@4.7.4)
   '@docusaurus/core':
     specifier: ^2.4.1
     version: 2.4.1(@docusaurus/types@2.4.1)(react-dom@17.0.2)(react@17.0.2)(typescript@4.7.4)
@@ -1516,8 +1516,8 @@ packages:
     resolution: {integrity: sha512-Tbsj02wXCbqGmzdnXNk0SOF19ChhRU70BsroIi4Pm6Ehp56in6vch94mfbdQ17DozxkL3BAVjbZ4Qc1a0HFRAg==}
     dev: true
 
-  /@codeharbor/docu-notion@0.0.3(@types/node@20.3.2)(typescript@4.7.4):
-    resolution: {integrity: sha512-q8Wip5wTCm+8XTNjh8AgLk31plIhFiB09EFjaDTqTFWWjabpM5kh641YR9BjBV2uhc78LAVvL3T4OzG2x4Hdpg==}
+  /@codeharbor/docu-notion@0.0.4(@types/node@20.3.2)(typescript@4.7.4):
+    resolution: {integrity: sha512-o3f608VK9c0XrRm/Z0u9Xq+XdvINYHC0A12U4hiQqj44/JLUV3jKuZlIupn5+By4mjfj5dTxAyOMHa60eMoDmA==}
     hasBin: true
     dependencies:
       '@notionhq/client': 2.2.3
