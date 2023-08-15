@@ -33,7 +33,7 @@ export const replaceTabsWithSpaces: IPlugin = {
   regexMarkdownModifications: [
     {
       regex: /\t/g,
-      replacementPattern: "    ",
+      replacementPattern: "  ",
     },
   ],
 };

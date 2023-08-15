@@ -34,3 +34,9 @@ i18n/zh-Hant/docusaurus-plugin-content-docs/current/*
 
 i18n/zh-Hant/docusaurus-plugin-content-blog/*
 !i18n/zh-Hant/docusaurus-plugin-content-blog/options.json
+
+i18n/zh/docusaurus-plugin-content-docs/current/*
+!i18n/zh/docusaurus-plugin-content-docs/current/.gitkeep
+
+i18n/zh/docusaurus-plugin-content-blog/*
+!i18n/zh/docusaurus-plugin-content-blog/options.json
