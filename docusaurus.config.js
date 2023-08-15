@@ -2,6 +2,7 @@ const math = require('remark-math');
 const katex = require('rehype-katex');
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const { i18n } = require('./config');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -17,9 +18,15 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en', 'zh'], // ['en', 'zh-Hant', 'ko'],
+    defaultLocale: i18n.en,
+    locales: [i18n.en, i18n.zh], // ['en', 'zh-Hant', 'ko'],
   },
+  scripts: [
+    {
+      src: '/_vercel/insights/script.js',
+      defer: true,
+    }
+  ],
   plugins: [
     [
       '@docusaurus/plugin-client-redirects',
@@ -72,7 +79,9 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      metadata: [{name: 'Keystones', content: 'blog, Tutorial, get started'}],
       image: 'img/social-card.jpg',
+      staticDirectories: ['static'],
       navbar: {
         logo: {
           alt: 'Keystone Logo',
@@ -90,21 +99,17 @@ const config = {
           },
           // { to: '/blog', label: 'Blog', position: 'left' },
           {
+            href: 'https://support.keyst.one/',
+            label: 'Keystone Gen 2',
+            position: 'right',
+          },
+          {
+            href: 'https://keystonewallet.atlassian.net/servicedesk/customer/portal/1',
+            label: 'Contact Us',
+            position: 'right',
+          },
+          {
             type: 'localeDropdown',
-            position: 'right',
-          },
-          {
-            label: 'Prior Editions',
-            position: 'right',
-            type: 'dropdown',
-            items: [{
-              href: 'https://support.keyst.one/',
-              label: 'Gen 2',
-            },]
-          },
-          {
-            href: 'https://github.com/KeystoneHQ',
-            label: 'GitHub',
             position: 'right',
           },
         ],
@@ -127,6 +132,9 @@ const config = {
               {
                 label: 'Telegram',
                 href: 'https://t.me/KeystoneWallet',
+                [i18n.zh]: {
+                  href: 'http://t.me/KeystoneWalletCN',
+                }
               },
               {
                 label: 'Youtube',
@@ -134,11 +142,17 @@ const config = {
               },
               {
                 label: 'Discord',
-                href: 'https://discord.com/invite/6vEfPEJKJD',
+                href: 'https://keyst.one/discord',
+                [i18n.zh]: {
+                  href: 'https://keyst.one/DC',
+                }
               },
               {
                 label: 'Twitter',
                 href: 'https://twitter.com/KeystoneWallet',
+                [i18n.zh]: {
+                  href: 'https://twitter.com/KeystoneCN',
+                }
               },
             ],
           },
@@ -147,7 +161,10 @@ const config = {
             items: [
               {
                 label: 'Blog',
-                to: '/blog',
+                href: 'https://blog.keyst.one',
+                [i18n.zh]: {
+                  href: 'https://mirror.xyz/keystonecn.eth',
+                }
               },
               {
                 label: 'GitHub',

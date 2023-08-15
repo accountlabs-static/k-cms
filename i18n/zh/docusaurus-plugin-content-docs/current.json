@@ -2,5 +2,21 @@
   "version.label": {
     "message": "Next",
     "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Keystone Gen 3": {
+    "message": "Keystone 三代",
+    "description": "The label for category Keystone Gen 3 in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Keystone Gen 3.link.generated-index.title": {
+    "message": "Keystone 三代",
+    "description": "The generated-index page title for category Keystone Gen 3 in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.3rd Party Wallets": {
+    "message": "集成第三方钱包",
+    "description": "The label for category 3rd Party Wallets in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.3rd Party Wallets.link.generated-index.title": {
+    "message": "集成第三方钱包",
+    "description": "The generated-index page title for category 3rd Party Wallets in sidebar tutorialSidebar"
   }
 }

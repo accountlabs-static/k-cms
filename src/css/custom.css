@@ -6,7 +6,7 @@
 @font-face {
   font-family: 'Open Sans';
   src: url('/fonts/OpenSans-VariableFont_wdth,wght.ttf') format('truetype');
-  font-weight: 600;
+  font-weight: normal;
   font-style: normal;
 }
 
@@ -34,4 +34,13 @@
   --ifm-color-primary-lighter: #b1d0f9;
   --ifm-color-primary-lightest: #d6ecfa;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+p > img:only-child {
+  display: block;
+  margin: 0 auto;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 80vh;
 }

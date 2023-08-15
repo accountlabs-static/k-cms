@@ -16,10 +16,11 @@
     "pull": "node pull.js"
   },
   "dependencies": {
-    "@codeharbor/docu-notion": "^0.0.2",
+    "@codeharbor/docu-notion": "^0.0.5",
     "@docusaurus/core": "^2.4.1",
     "@docusaurus/plugin-client-redirects": "^2.4.1",
     "@docusaurus/preset-classic": "2.4.1",
+    "@docusaurus/theme-common": "^2.4.1",
     "@mdx-js/react": "^1.6.22",
     "clsx": "^1.2.1",
     "hast-util-is-element": "1.1.0",
