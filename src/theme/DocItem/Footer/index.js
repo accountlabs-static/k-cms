@@ -51,7 +51,7 @@ export default function DocItemFooter() {
 
   return (
     <>
-      <DocsRating />
+      <DocsRating label={metadata.unversionedId} />
       <footer
         className={clsx(ThemeClassNames.docs.docFooter, 'docusaurus-mt-lg')}>
         {canDisplayTagsRow && <TagsRow tags={tags} />}

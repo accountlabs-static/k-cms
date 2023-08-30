@@ -15,14 +15,15 @@ const DocsRating = ({ label }) => {
 
   const [haveVoted, setHaveVoted] = useState(false);
   const giveFeedback = value => {
-    if (window.ga) {
-      window.ga('send', {
-        hitType: 'event',
-        eventCategory: 'button',
-        eventAction: 'feedback',
-        eventLabel: label,
-        eventValue: value,
+    console.log("DEBUGPRINT[1]: DocsRating.tsx:23: label=", label, value)
+    if (window.gtag) {
+      window.gtag('event', 'feedback', {
+        'app_name': 'keystone-guide',
+        'event_category': 'button',
+        'event_label': label,
+        'value': value,
       });
+      console.log('gtag called')
     }
     setHaveVoted(true);
   };
