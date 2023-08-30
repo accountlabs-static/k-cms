@@ -28,6 +28,7 @@ const config = {
     }
   ],
   plugins: [
+    'docusaurus-plugin-sass',
     [
       '@docusaurus/plugin-client-redirects',
       {
@@ -58,7 +59,10 @@ const config = {
           showReadingTime: true,
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve('./src/css/custom.scss'),
+        },
+        gtag: {
+          trackingID: 'G-WCBLWW84S2',
         },
       }),
     ],
