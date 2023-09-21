@@ -18,5 +18,13 @@
   "sidebar.tutorialSidebar.category.3rd Party Wallets.link.generated-index.title": {
     "message": "集成第三方钱包",
     "description": "The generated-index page title for category 3rd Party Wallets in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Orders": {
+    "message": "订单",
+    "description": "侧边栏教程中订单分类的标签"
+  },
+  "sidebar.tutorialSidebar.category.Orders.link.generated-index.title": {
+    "message": "订单",
+    "description": "侧边栏教程中订单分类的生成索引页面标题"
   }
 }
