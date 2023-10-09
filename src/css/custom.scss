@@ -47,40 +47,45 @@ p > img:only-child {
 
 /* Docs Rating Box */
 .docsRating {
-  display: inline-block;
+  display: flex;
+  justify-content: flex-end;
   width: 100%;
   padding: 16px 30px 16px 40px;
-  min-height: 66px;
+  min-height: 64px;
   margin-top: 42px;
-  background-color: rgba(100, 215, 255, 0.3);
   text-align: center;
-  color: #057594;
   line-height: 32px;
   font-weight: 500;
   border-radius: 0 var(--ifm-global-radius) var(--ifm-global-radius) 0;
 
-  svg {
-    height: 1.5em;
-    width: 1.5em;
-    margin: 0 0 0 6px;
+  span {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.56px;
+    text-transform: uppercase;
+    color: #5D657A;
+  }
 
-    &:hover,
-    &:focus {
-      cursor: pointer;
-      fill: var(--ifm-color-primary);
+  .vote-box {
+    display: flex;
+    align-items: center;
+    margin-left: 32px;
+    gap: 0 16px;
+    svg {
+      height: 32px;
+      width: 32px;
+      filter: grayscale(1) opacity(0.5);
+
+      &:hover,
+      &:focus {
+        cursor: pointer;
+        filter: grayscale(0) opacity(1);
+      }
     }
   }
 
-  .i_thumbsup {
-    fill: #56a211;
-    transform: translateY(0.25em);
-    margin-left: 12px;
-  }
-
-  .i_thumbsdown {
-    fill: #e9430f;
-    transform: scale(-1, -1) translateY(-0.25em);
-  }
 }
 
 html[data-theme="dark"] .docsRating {
