@@ -10,6 +10,10 @@
   font-style: normal;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 :root {
   font-family: 'Open Sans';
   --ifm-code-font-size: 95%;
@@ -36,6 +40,10 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
+.text-right {
+  text-align: right;
+}
+
 p > img:only-child {
   display: block;
   margin: 0 auto;
@@ -58,8 +66,11 @@ p > img:only-child {
   font-weight: 500;
   border-radius: 0 var(--ifm-global-radius) var(--ifm-global-radius) 0;
 
+  &.bad-reasons {
+    flex-direction: column;
+  }
+
   span {
-    font-family: Montserrat;
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
@@ -82,6 +93,32 @@ p > img:only-child {
       &:focus {
         cursor: pointer;
         filter: grayscale(0) opacity(1);
+      }
+    }
+  }
+
+  .bad-selections {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 16px;
+    width: 100%;
+
+    .select-box {
+      display: flex;
+      align-items: center;
+      gap: 0 8px;
+      margin-left: 32px;
+      border: 1px solid #CED3E0;
+      padding: 0 16px;
+      cursor: pointer;
+      color: rgba(0, 0, 0, 0.85);
+      &:hover {
+        border-color: #1F5AFF;
+        color: #1F5AFF;
+        background: #1F5AFF1F;
+        svg path {
+          fill: #1F5AFF;
+        }
       }
     }
   }

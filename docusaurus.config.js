@@ -38,6 +38,12 @@ const config = {
         },
       },
     ],
+    [
+      "docusaurus2-dotenv",
+      {
+        path: "./.env",
+      },
+    ],
   ],
   presets: [
     [
@@ -83,7 +89,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      metadata: [{name: 'Keystones', content: 'blog, Tutorial, get started'}, {name: 'google-site-verification', content: 'YKTbN9g_Gp83YNkR4_dtNbmbV91qNlmSFKe6sBNJdds'}],
+      metadata: [{ name: 'Keystones', content: 'blog, Tutorial, get started' }, { name: 'google-site-verification', content: 'YKTbN9g_Gp83YNkR4_dtNbmbV91qNlmSFKe6sBNJdds' }],
       image: 'img/social-card.jpg',
       staticDirectories: ['static'],
       navbar: {
