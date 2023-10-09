@@ -42,6 +42,7 @@ const config = {
       "docusaurus2-dotenv",
       {
         path: "./.env",
+        systemvars: true,
       },
     ],
   ],
