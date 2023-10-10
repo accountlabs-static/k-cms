@@ -23,15 +23,16 @@ const DocsRating = ({ label }) => {
   const { metadata } = useDoc();
 
   const [voteValue, setVoteValue] = useState(null);
-  const giveFeedback = async (value: string) => {
+  const giveFeedback = (value: string) => {
     const docRef = doc(firestore, 'docs', metadata.title);
-    await setDoc(docRef, {}, { merge: true });
-
-    const docRatingRef = doc(firestore, "docs", metadata.title);
-    await updateDoc(docRatingRef, {
-      path: metadata.permalink,
-      [value]: increment(1)
+    setDoc(docRef, {}, { merge: true }).then(() => {
+      const docRatingRef = doc(firestore, "docs", metadata.title);
+      updateDoc(docRatingRef, {
+        path: metadata.permalink,
+        [value]: increment(1)
+      });
     });
+
     setVoteValue(value);
   };
 

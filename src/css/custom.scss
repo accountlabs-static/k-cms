@@ -58,7 +58,7 @@ p > img:only-child {
   display: flex;
   justify-content: flex-end;
   width: 100%;
-  padding: 16px 30px 16px 40px;
+  padding: 16px 0;
   min-height: 64px;
   margin-top: 42px;
   text-align: center;
@@ -75,7 +75,6 @@ p > img:only-child {
     font-style: normal;
     font-weight: 600;
     letter-spacing: 0.56px;
-    text-transform: uppercase;
     color: #5D657A;
   }
 
@@ -132,6 +131,22 @@ html[data-theme="dark"] .docsRating {
 @media only screen and (max-width: 996px) {
   .docsRating {
     margin: 36px 0 0 !important;
-    border-radius: var(--ifm-global-radius);
+    flex-direction: column;
+    align-items: flex-start;
+    span {
+      font-size: 12px;
+    }
+    .vote-box {
+      margin-left: 0;
+      margin-top: 16px;
+    }
+    .bad-selections {
+      flex-direction: column;
+      gap: 12px 0;
+      .select-box {
+        margin-left: 0;
+        font-size: 12px;
+      }
+    }
   }
 }
