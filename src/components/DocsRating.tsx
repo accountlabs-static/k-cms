@@ -9,6 +9,7 @@ import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
 import React, { useState, useMemo } from 'react';
 import { useDoc } from '@docusaurus/theme-common/internal';
 import { doc, updateDoc, increment, setDoc } from "firebase/firestore";
+import dayjs from 'dayjs'
 import { firestore } from '../plugins/firebase';
 import { translate } from '@docusaurus/Translate';
 import EditIcon from '@site/static/img/edit.svg';
@@ -24,13 +25,15 @@ const DocsRating = ({ label }) => {
 
   const [voteValue, setVoteValue] = useState(null);
   const giveFeedback = (value: string) => {
+    const day = dayjs()
     const docRef = doc(firestore, 'docs', metadata.title);
     setDoc(docRef, {}, { merge: true }).then(() => {
       const docRatingRef = doc(firestore, "docs", metadata.title);
       updateDoc(docRatingRef, {
         path: metadata.permalink,
+        [`all.${value}`]: increment(1),
+        [`dates.${day.format('YYYY')}.${day.format('MM')}.${value}`]: increment(1),
         editTime: new Date(),
-        [value]: increment(1)
       });
     });
 
