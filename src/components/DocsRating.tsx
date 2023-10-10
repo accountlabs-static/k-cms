@@ -10,7 +10,7 @@ import React, { useState, useMemo } from 'react';
 import { useDoc } from '@docusaurus/theme-common/internal';
 import { doc, updateDoc, increment, setDoc } from "firebase/firestore";
 import { firestore } from '../plugins/firebase';
-import Translate, { translate } from '@docusaurus/Translate';
+import { translate } from '@docusaurus/Translate';
 import EditIcon from '@site/static/img/edit.svg';
 import HappyIcon from '@site/static/img/ratings/happy.svg';
 import MediumIcon from '@site/static/img/ratings/medium.svg';
@@ -29,6 +29,7 @@ const DocsRating = ({ label }) => {
       const docRatingRef = doc(firestore, "docs", metadata.title);
       updateDoc(docRatingRef, {
         path: metadata.permalink,
+        editTime: new Date(),
         [value]: increment(1)
       });
     });
