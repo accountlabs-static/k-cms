@@ -275,7 +275,7 @@
     "description": "docs footer rating title"
   },
   "docs.footer.ratings.bad.question": {
-    "message": "你不满意的原因是什么？",
+    "message": "您不满意的原因是什么？",
     "description": "docs footer rating bad question"
   },
   "docs.footer.ratings.bad.selection.outdated": {
