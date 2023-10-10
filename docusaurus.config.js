@@ -28,6 +28,7 @@ const config = {
     }
   ],
   plugins: [
+    'docusaurus-plugin-sass',
     [
       '@docusaurus/plugin-client-redirects',
       {
@@ -35,6 +36,13 @@ const config = {
         createRedirects(routePath) {
           return [];
         },
+      },
+    ],
+    [
+      "docusaurus-plugin-dotenv",
+      {
+        path: "./.env",
+        systemvars: true,
       },
     ],
   ],
@@ -58,7 +66,10 @@ const config = {
           showReadingTime: true,
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve('./src/css/custom.scss'),
+        },
+        gtag: {
+          trackingID: 'G-WCBLWW84S2',
         },
       }),
     ],
@@ -79,7 +90,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      metadata: [{name: 'Keystones', content: 'blog, Tutorial, get started'}, {name: 'google-site-verification', content: 'YKTbN9g_Gp83YNkR4_dtNbmbV91qNlmSFKe6sBNJdds'}],
+      metadata: [{ name: 'Keystones', content: 'blog, Tutorial, get started' }, { name: 'google-site-verification', content: 'YKTbN9g_Gp83YNkR4_dtNbmbV91qNlmSFKe6sBNJdds' }],
       image: 'img/social-card.jpg',
       staticDirectories: ['static'],
       navbar: {

@@ -1,0 +1,18 @@
+{
+  "logo.alt": {
+    "message": "Keystone Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Tutorial": {
+    "message": "Tutorial",
+    "description": "Navbar item with label Tutorial"
+  },
+  "item.label.Keystone Gen 2": {
+    "message": "Keystone Gen 2",
+    "description": "Navbar item with label Keystone Gen 2"
+  },
+  "item.label.Contact Us": {
+    "message": "Contact Us",
+    "description": "Navbar item with label Contact Us"
+  }
+}

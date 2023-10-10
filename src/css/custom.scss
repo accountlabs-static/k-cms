@@ -1,0 +1,152 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+@font-face {
+  font-family: 'Open Sans';
+  src: url('/fonts/OpenSans-VariableFont_wdth,wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+:root {
+  font-family: 'Open Sans';
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-global-radius: 0;  
+  --ifm-color-primary: #0070f3;
+  --ifm-color-primary-dark: #0050b3;
+  --ifm-color-primary-darker: #003c93;
+  --ifm-color-primary-darkest: #002874;
+  --ifm-color-primary-light: #4088f6;
+  --ifm-color-primary-lighter: #669cf7;
+  --ifm-color-primary-lightest: #95b0f8;
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #669cf7;
+  --ifm-color-primary-dark: #4088f6;
+  --ifm-color-primary-darker: #1c74f5;
+  --ifm-color-primary-darkest: #0050b3;
+  --ifm-color-primary-light: #8cb4f8;
+  --ifm-color-primary-lighter: #b1d0f9;
+  --ifm-color-primary-lightest: #d6ecfa;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+.text-right {
+  text-align: right;
+}
+
+p > img:only-child {
+  display: block;
+  margin: 0 auto;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 80vh;
+}
+
+/* Docs Rating Box */
+.docsRating {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 16px 0;
+  min-height: 64px;
+  margin-top: 42px;
+  text-align: center;
+  line-height: 32px;
+  font-weight: 500;
+  border-radius: 0 var(--ifm-global-radius) var(--ifm-global-radius) 0;
+
+  &.bad-reasons {
+    flex-direction: column;
+  }
+
+  span {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.56px;
+    color: #5D657A;
+  }
+
+  .vote-box {
+    display: flex;
+    align-items: center;
+    margin-left: 32px;
+    gap: 0 16px;
+    svg {
+      height: 32px;
+      width: 32px;
+      filter: grayscale(1) opacity(0.5);
+
+      &:hover,
+      &:focus {
+        cursor: pointer;
+        filter: grayscale(0) opacity(1);
+      }
+    }
+  }
+
+  .bad-selections {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 16px;
+    width: 100%;
+
+    .select-box {
+      display: flex;
+      align-items: center;
+      gap: 0 8px;
+      margin-left: 32px;
+      border: 1px solid #CED3E0;
+      padding: 0 16px;
+      cursor: pointer;
+      color: rgba(0, 0, 0, 0.85);
+      &:hover {
+        border-color: #1F5AFF;
+        color: #1F5AFF;
+        background: #1F5AFF1F;
+        svg path {
+          fill: #1F5AFF;
+        }
+      }
+    }
+  }
+
+}
+
+html[data-theme="dark"] .docsRating {
+  color: #cee9f3;
+}
+
+@media only screen and (max-width: 996px) {
+  .docsRating {
+    margin: 36px 0 0 !important;
+    flex-direction: column;
+    align-items: flex-start;
+    span {
+      font-size: 12px;
+    }
+    .vote-box {
+      margin-left: 0;
+      margin-top: 16px;
+    }
+    .bad-selections {
+      flex-direction: column;
+      gap: 12px 0;
+      .select-box {
+        margin-left: 0;
+        font-size: 12px;
+      }
+    }
+  }
+}
