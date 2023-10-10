@@ -7,9 +7,9 @@
   <path d="M9.70117 11.7817C9.22367 12.5317 8.13867 12.3817 8.13867 11.1542C8.13867 10.3692 8.29867 6.34175 8.97117 6.90425C10.0687 7.82175 10.3812 10.7492 9.70117 11.7817Z" fill="#81D4FA" />
   <defs>
     <radialGradient id="paint0_radial_3214_20420" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(15.8984 15.725) scale(14.2399 14.2399)">
-      <stop offset="0.5" stopColor="#FDE030" />
-      <stop offset="0.885417" stopColor="#FFCC41" />
-      <stop offset="1" stopColor="#FFC468" />
+      <stop offset="0.5" stop-color="#FDE030" />
+      <stop offset="0.885417" stop-color="#FFCC41" />
+      <stop offset="1" stop-color="#FFC468" />
     </radialGradient>
   </defs>
 </svg>
