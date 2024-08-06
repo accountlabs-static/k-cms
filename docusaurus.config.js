@@ -132,6 +132,11 @@ const config = {
             position: 'right',
           },
           {
+            href: 'https://www.keystone3.com',
+            label: 'Korean Tutorial',
+            position: 'right',
+          },
+          {
             type: 'localeDropdown',
             position: 'right',
           },
