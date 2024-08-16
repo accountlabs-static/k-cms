@@ -14,5 +14,9 @@
   "item.label.Contact Us": {
     "message": "Contact Us",
     "description": "Navbar item with label Contact Us"
+  },
+  "item.label.Korean Tutorial": {
+    "message": "한글 버전",
+    "description": "Navbar item with label Korean Tutorial"
   }
 }

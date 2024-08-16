@@ -11,12 +11,12 @@
     "message": "Keystone Gen 3",
     "description": "The generated-index page title for category Keystone Gen 3 in sidebar tutorialSidebar"
   },
-  "sidebar.tutorialSidebar.category.3rd Party Wallets": {
-    "message": "3rd Party Wallets",
+  "sidebar.tutorialSidebar.category.3rd Party Wallet": {
+    "message": "3rd Party Wallet",
     "description": "The label for category 3rd Party Wallets in sidebar tutorialSidebar"
   },
-  "sidebar.tutorialSidebar.category.3rd Party Wallets.link.generated-index.title": {
-    "message": "3rd Party Wallets",
+  "sidebar.tutorialSidebar.category.3rd Party Wallet.link.generated-index.title": {
+    "message": "3rd Party Wallet",
     "description": "The generated-index page title for category 3rd Party Wallets in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Orders": {
